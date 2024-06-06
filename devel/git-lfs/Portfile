@@ -22,6 +22,11 @@ depends_build-append    port:asciidoctor \
                         port:rb31-ronn-ng
 depends_run             port:git
 
+variant xcodegit description {Use Xcode-provided Git} {
+    depends_run-delete  port:git
+    depends_run-append  bin:git:git
+}
+
 if {${os.platform} eq "darwin" && ${os.major} < 16} {
     # requires clonefile(3), see https://trac.macports.org/ticket/60121
     known_fail      yes
