@@ -3,10 +3,10 @@
 PortSystem          1.0
 PortGroup           golang 1.0
 
-go.setup            github.com/packwiz/packwiz dfd8b68a4796c763e25bad50265ea1f1233e24f1
+go.setup            github.com/packwiz/packwiz 170b22d785959dda5876b54b7f16e1b807a57fb6
 go.offline_build    no
 
-version             20260211
+version             20261014
 maintainers         {johnlindop.com:git @JLindop} openmaintainer
 revision            0
 
@@ -21,9 +21,9 @@ categories          games
 license             MIT
 
 checksums           ${distname}${extract.suffix} \
-                        rmd160  6340a970f7110ed2fc5882be7eb6fab314644bc6 \
-                        sha256  6f4df7081d8122c89635eb6946b68d76b38ca4bd948dd3fbb1fc0f3fd08c753c \
-                        size    83329
+                        rmd160  915892a9df2e3566f14e6fcc024da1c9e33c58aa \
+                        sha256  7911a96aa199369b055d8215f7d86840a365b0bc7a16374f1b2d9323ebb084ac \
+                        size    84349
 
 destroot {
     xinstall -m 0755 ${worksrcpath}/${name} ${destroot}${prefix}/bin/
